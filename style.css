@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin: 10px auto;
+}
+.display input{
+    text-align: right;
+}
+.btns{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns button{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+.num_btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 150px;
+    gap: 5px;
+    justify-content: center;
+    align-items:flex-start;
+}
+.operate_btns{
+    display: flex;
+    gap: 5px;
+    width: 90px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -45px;
+}
