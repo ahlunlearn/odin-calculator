@@ -31,10 +31,14 @@ function operate(cal,a,b){
     }
 }
 let input_str = ''
-const display = document.querySelector('.display input')
+const display = document.querySelector('.display')
 const num_btns = document.querySelectorAll('.num_btns button')
 for(let i = 0; i < num_btns.length;i++){
     num_btns[i].addEventListener('click', ()=>{
-        display.value += num_btns[i].value
+        if(display.innerText === '0'){
+            display.innerText = num_btns[i].value
+        } else {
+            display.innerText += num_btns[i].value
+        }
     })
 }
