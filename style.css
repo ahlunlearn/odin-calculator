@@ -47,6 +47,9 @@
     width: 65px;
     height: 65px;
 }
+.operator{
+    background-color: lightpink;
+}
 /* .num_btns{
     display: flex;
     flex-direction: row;
