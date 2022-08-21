@@ -6,7 +6,8 @@
 
 .container{
     width: 320px;
-    height: 300px;
+    /* height: 320px; */
+    padding: 25px 10px;
     margin: 50px auto;
     text-align: center;
     display: flex;
@@ -19,13 +20,13 @@
 
 .display{
     margin: 5px auto;
-    width: 220px;
+    width: 270px;
     height: 30px;
     text-align: right;
     padding: 5px;
     background-color: aliceblue;
 }
-.btns{
+.btns, .clear_btns {
     margin-top: 10px;
     width: 100%;
     text-align: center;
@@ -33,14 +34,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-
-.btns button{
+.clear_btns button{
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 135px;
+    height: 65px;
 }
-.num_btns{
+.btns > button{
+    font-size: 20px;
+    width: 65px;
+    height: 65px;
+}
+/* .num_btns{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,4 +66,4 @@
     align-items: center;
     margin-top: -45px;
     margin-right: 10px;
-}
+} */
