@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+button{
+    border: 0.5px solid gray;
+}
+button:hover{
+    cursor: grab;
+    filter: brightness(60%);
+    transition: 0.1s;
+}
+button:active{
+    filter: brightness(80%);
+}
 
 .container{
     width: 320px;
@@ -49,6 +60,14 @@
 }
 .operator{
     background-color: lightpink;
+}
+
+.delete{
+    background-color: yellow;
+}
+
+.clear{
+    background-color: red;
 }
 /* .num_btns{
     display: flex;
